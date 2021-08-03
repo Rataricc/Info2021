@@ -18,7 +18,7 @@ Desafio 1: Funciones:
 import time
 def degradacion(elemento):
 	if elemento == 1: 
-		return 150
+		return 300  #150
 	elif elemento == 2: 
 		return 1000
 	elif elemento == 3: 
