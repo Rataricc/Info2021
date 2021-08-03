@@ -26,6 +26,10 @@ def degradacion(elemento):
 	elif elemento == 4: 
 		return 5
 
+
+
+# Agrego un comentario 
+
 def menu():
 	print("") 
 	print("                                  ¡Salvemos nuetro planeta!.\n")
@@ -38,21 +42,7 @@ def menu():
 		print(x)
 	return input()
 
-es_valido = False
-salio = False 
 
-while not es_valido and not salio: 
-	opcion = menu()
-	if not opcion.isdigit(): 
-		opcion = menu()
-		continue
-	opcion = int(opcion)
-	if opcion == 0: 
-		salio = True
-	elif opcion >= 5: 
-		continue
-	else: 
-		es_valido = True
 
 if es_valido and not salio: 
 	obtener_degradacion = degradacion(opcion)
