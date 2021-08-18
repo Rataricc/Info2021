@@ -1,4 +1,4 @@
-# Mi Primer Sitio desarrllado en el Informatorio
+# Mi Primer Sitio desarrollado en el Informatorio
 
 _Este es mi primer proyecto del modulo de desarrollo web_
 
