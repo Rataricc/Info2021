@@ -23,6 +23,11 @@ def login(request):
 	}
 	return render(request, template_name, ctx)
 
+
+def ini(request): 
+	template_name = "ini.html"
+	ctx = {}
+	return render(request,template_name,ctx)
 """
 	Mirando el video de la clase para practicar esto, quede en: 46:45, para retomar mas
 	tarde...
