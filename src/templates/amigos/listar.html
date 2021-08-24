@@ -1,12 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Lista de Amigos</title>
-</head>
-<body>
-	<h1>Lista de Amigos</h1>
-	<ul>{% for a in amigos %}
-			<li>{{a.nombre}}</li>
-	{% endfor %}</ul>
-</body>
-</html>
+{% extends "base/base.html" %}
+
+
+{% block contenido %}
+
+	<div class="album py-5 bg-light">
+    	<div class="container">
+        	<div class="row">
+        		<table class="table">
+				  <thead>
+				    <tr>
+				      <th scope="col">Nombre</th>
+				      <th scope="col">Apellido</th>
+				      <th scope="col">Direccion</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				  	{% for a in amigos %}
+	
+					    <tr>
+					      <td>{{a.nombre}}</td>
+					      <td>{{a.apellido|default:'-'}}</td>
+					      <td>{{a.domicilio}}</td>
+					    </tr>
+					{% endfor %}
+				  </tbody>
+				</table>
+        		
+				</div>
+			</div>
+		</div>
+	</div>
+	
+{% endblock contenido %}
+
